@@ -51,7 +51,7 @@ header > h1 {
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
