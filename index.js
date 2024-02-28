@@ -50,6 +50,7 @@ const dados = [
       imagem: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lqo8n8bldden81',
       titulo: 'Aspirador De Pó Usb Portátil Completo Linha Premium Carro E Casa 2000mAh'
     },
+
     {
       link: 'https://shopee.com.br/product/328666563/17932371232',
       imagem: 'Processador eletrico.jpeg',

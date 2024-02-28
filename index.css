@@ -21,6 +21,14 @@ header {
     border-radius: 50%;
 }
 
+.conteiner_img > img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
 header > h1 {
     color: white;
 
