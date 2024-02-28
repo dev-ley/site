@@ -53,6 +53,7 @@ header > input {
 
 .cards {
 
+    border-radius: 8px;
     margin-top: 3%;
     height: 250px;
     width: 100%;
