@@ -39,6 +39,7 @@ header > input {
     align-items: center;
     padding: 10px;
     background-color:#ee4d2d15;
+    text-align: center;
 }
 
 .conteiner_cards {
@@ -53,7 +54,8 @@ header > input {
 .cards {
 
     margin-top: 3%;
-    width: 31%;
+    height: 250px;
+    width: 100%;
     background-color:#ee4d2d2a;
     box-shadow: 1px 1px 6px rgba(186, 169, 169, 0.482);
 }
@@ -68,16 +70,16 @@ header > input {
     
 
 }
-.imagem_descricao > div {
+.imagem_descricao > a > div {
+        height: 150px;
+        width: 230px;
+        display: flex;
+        justify-content: center;
+    }
 
-    max-width: 150px;
-    height: 100px;
 
-}
-
-.imagem_descricao > div > img {
+.imagem_descricao > a > div > img {
     width: 100%;
-    max-width: 150px;
     height: 100%;
     border-radius: 4px;
 }
