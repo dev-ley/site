@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.coracao {
+    color: red; /* Define a cor do coração */
+    margin-right: 5px; /* Define a margem direita para separar o coração do texto */
+
 }
 
 header {
@@ -25,12 +38,22 @@ header > a {
 
 header > input {
 
-    background-color: white;
+    background-image: url(../assets/imagens/lupa.png);
+    background-position: right;
+    background-position-x: 99%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+
     text-indent: 10px;
     width: 50%;
     height: 30px;
     border-radius: 5px;
 
+}
+
+h1 {
+    color: #ee4d2d;
+    text-shadow: 1px 1px 1px black;
 }
 
 .section_cards {
@@ -86,10 +109,7 @@ header > input {
 }
 
 .imagem_descricao > h2 {
-    font-size: 16px;
-}
-
-.imagem_descricao > p {
-    font-size: 12px;
-    
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(98, 89, 89);
 }
