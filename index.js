@@ -15,7 +15,7 @@ function criarCards(produtos) {
     // Criar o elemento h2 para exibir o código (key) do produto
     const codigoTitulo = document.createElement('h2');
     codigoTitulo.classList.add('textocodigo')
-    codigoTitulo.textContent = `Cód ${item.key}`;
+    codigoTitulo.textContent = `Code ${item.key}`;
 
     // Criar o elemento div para a imagem e descrição com a classe "imagem_descricao"
     const imagemDescricaoDiv = document.createElement('div');
