@@ -12,6 +12,11 @@ function criarCards(produtos) {
     const cardDiv = document.createElement('div');
     cardDiv.classList.add('cards');
 
+    // Criar o elemento h2 para exibir o código (key) do produto
+    const codigoTitulo = document.createElement('h2');
+    codigoTitulo.classList.add('textocodigo')
+    codigoTitulo.textContent = `Cód ${item.key}`;
+
     // Criar o elemento div para a imagem e descrição com a classe "imagem_descricao"
     const imagemDescricaoDiv = document.createElement('div');
     imagemDescricaoDiv.classList.add('imagem_descricao');
@@ -42,6 +47,7 @@ function criarCards(produtos) {
     imagemDescricaoDiv.appendChild(titulo);
 
     // Adicionar o elemento de imagem e descrição dentro do elemento principal "cards"
+    cardDiv.appendChild(codigoTitulo); // Adiciona o código (key) acima da imagem
     cardDiv.appendChild(imagemDescricaoDiv);
 
     // Adicionar o card criado ao container
@@ -66,7 +72,8 @@ fetch('../dados.json')
 
       // Filtra os produtos com base no termo de busca
       const produtosFiltrados = data.filter((produto) => {
-        return produto.titulo.toLowerCase().includes(termoBusca);
+        // Verifica se o termo de busca corresponde ao título ou à chave (key) do produto
+        return produto.titulo.toLowerCase().includes(termoBusca) || produto.key == termoBusca;
       });
 
       // Chama a função para criar os cards com base nos produtos filtrados
